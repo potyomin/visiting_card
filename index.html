@@ -1,0 +1,250 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <title>Владислав Потёмин — Junior Data Analyst</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description"
+        content="Стажёр-аналитик данных (Junior Data Analyst). Python/pandas, SQL, визуализация, базовая статистика; Flask, MongoDB, Docker, Yandex Cloud. Санкт-Петербург.">
+    <!-- Open Graph -->
+    <meta property="og:title" content="Владислав Потёмин — Junior Data Analyst">
+    <meta property="og:description" content="Стажёр-аналитик данных. Санкт-Петербург. Резюме (PDF) и портфолио.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="assets/og-card.png">
+    <meta property="og:url" content="https://potyomin.github.io/">
+    <!-- Favicon (необязательно) -->
+    <link rel="icon"
+        href="data:image/svg+xml,<svg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27><text y=%27.9em%27 font-size=%2790%27>📊</text></svg>">
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+</head>
+
+<body>
+    <header class="site-header">
+        <a class="brand" href="#home">VP</a>
+        <nav class="nav">
+            <a href="#about">Обо мне</a>
+            <a href="#skills">Навыки</a>
+            <a href="#experience">Опыт</a>
+            <a href="#projects">Проекты</a>
+            <a href="#pubs">Публикации</a>
+            <a href="#edu">Образование</a>
+            <a href="#contact">Контакты</a>
+        </nav>
+        <button class="theme-toggle" id="themeToggle" aria-label="Переключить тему">☾</button>
+    </header>
+
+    <main id="home">
+        <!-- HERO -->
+        <section class="hero">
+            <div class="hero__content container">
+                <div class="hero__text">
+                    <h1>
+                        <span class="overline">Стажёр-аналитик данных</span>
+                        Владислав&nbsp;Потёмин
+                    </h1>
+                    <p class="lead">
+                        Python/pandas, scikit-learn, SQL, визуализация (matplotlib/Plotly/Chart.js), базовая статистика.
+                        Flask,
+                        MongoDB, Docker, Yandex&nbsp;Cloud. Санкт-Петербург — открыт к офлайн/гибридному формату.
+                    </p>
+                    <div class="cta">
+                        <a class="btn btn--primary" href="assets/Potyomin_Vladislav_CV_2025.pdf" download>📄 Скачать
+                            резюме (PDF)</a>
+                        <a class="btn btn--ghost" href="assets/portfolio.zip" download>🗂️ Портфолио
+                            (ZIP)</a>
+                        <a class="btn btn--link" href="https://github.com/potyomin" target="_blank"
+                            rel="noopener">GitHub ↗</a>
+                    </div>
+                    <ul class="contact-inline">
+                        <li>📍 Санкт-Петербург</li>
+                        <li><a href="mailto:potyominvladislav@gmail.com">✉️ Email: potyominvladislav@gmail.com</a></li>
+                        <li><a href="tel:+79115851390">📞 +7 911 585-13-90</a></li>
+                        <li><a href="https://t.me/potyominv" target="_blank" rel="noopener">✈️ Telegram</a></li>
+                    </ul>
+                </div>
+                <div class="hero__media">
+                    <div class="avatar">
+                        <img src="assets/avatar.jpg" alt="Владислав Потёмин"
+                            onerror="this.src='https://avatars.githubusercontent.com/u/0?v=4';">
+                    </div>
+                    <div class="stats">
+                        <div class="stat"><span class="stat__num">1+</span><span class="stat__label">год коммерч.
+                                практики</span></div>
+                        <div class="stat"><span class="stat__num">1</span><span class="stat__label">MVP продукта
+                                компании ООО "АСТРА"</span></div>
+                        <div class="stat"><span class="stat__num">3</span><span class="stat__label">Дополнительных
+                                курса пройдено</span></div>
+                        <div class="stat"><span class="stat__num">4</span><span class="stat__label">Научных
+                                работы с публикациями</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <svg class="hero__wave" viewBox="0 0 1440 120" aria-hidden="true">
+                <path
+                    d="M0,64L60,80C120,96,240,128,360,133.3C480,139,600,117,720,106.7C840,96,960,96,1080,85.3C1200,75,1320,53,1380,42.7L1440,32L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z">
+                </path>
+            </svg>
+        </section>
+
+        <!-- ABOUT -->
+        <section id="about" class="section container">
+            <h2>Обо мне</h2>
+            <p>
+                Магистрант ИТМО («Аналитика данных»). Создал динамический прототип DSS для микро- и малого бизнеса:
+                модуль сбора данных (50+ вопросов), расчёт показателей и визуализация результатов (Chart.js/Plotly);
+                деплой сервиса в Yandex Cloud (Docker, Nginx). Ищу стажировку / Junior Data Analyst с офлайн-форматом в
+                Санкт-Петербурге.
+            </p>
+        </section>
+
+        <!-- SKILLS -->
+        <section id="skills" class="section container">
+            <h2>Навыки</h2>
+            <div class="chips">
+                <span>Python</span><span>scikit-learn</span><span>pandas</span><span>numpy</span><span>SQL
+                    (JOIN/CTE/оконные)</span>
+                <span>matplotlib</span><span>Plotly</span><span>Chart.js</span>
+                <span>Flask</span><span>REST API</span><span>MongoDB</span>
+                <span>Docker</span><span>Nginx</span><span>Yandex Cloud</span>
+                <span>HTML5/CSS3/JS (ES6+)</span><span>BPMN&nbsp;2.0</span>
+            </div>
+        </section>
+
+        <!-- EXPERIENCE -->
+        <section id="experience" class="section container">
+            <h2>Опыт</h2>
+            <article class="card">
+                <header class="card__header">
+                    <div>
+                        <h3>ООО «АСТРА» — Junior Developer → Junior Data Analyst (интерн)</h3>
+                        <p class="muted">Июнь 2024 — настоящее время · Санкт-Петербург/удалённо</p>
+                    </div>
+                    <a class="badge" href="https://astra-systems.ru/" target="_blank" rel="noopener">astra-systems.ru
+                        ↗</a>
+                </header>
+                <ul class="card__list">
+                    <li>Спроектировал сбор данных: опросник <strong>50+ вопросов</strong>, схема в
+                        <strong>MongoDB</strong> (валидации, индексы).
+                    </li>
+                    <li>Очистка/трансформация (<strong>Python/pandas</strong>), агрегирования по сегментам.</li>
+                    <li>Аналитика/визуализация: метрики по 5 блокам <strong>звезды Гэлбрейта</strong>, графики
+                        (<strong>Chart.js/Plotly</strong>), экспорт <strong>CSV/JSON</strong>.</li>
+                    <li>API-доступ к данным (<strong>Flask</strong>), интеграция с веб-интерфейсом.</li>
+                    <li>Деплой в <strong>Yandex Cloud</strong>: <strong>Docker Compose</strong>, <strong>Nginx</strong>;
+                        базовый мониторинг и бэкапы.</li>
+                    <li><strong>SSO через Google</strong> (<abbr title="Open Authorization 2.0">OAuth 2.0</abbr> + <abbr
+                            title="Proof Key for Code Exchange">PKCE</abbr>): вход «<span lang="en">Sign in with
+                            Google</span>», автосоздание профиля, подтягивание имени/аватара,
+                        <strong>refresh-токены</strong> с шифрованием в БД.
+                    </li>
+                </ul>
+                <p class="stack">Стек: Python, pandas, Flask, MongoDB, Chart.js/Plotly, Docker, Nginx, Yandex Cloud.</p>
+            </article>
+        </section>
+
+        <!-- PROJECTS -->
+        <section id="projects" class="section container">
+            <h2>Проекты</h2>
+            <div class="grid">
+                <article class="card">
+                    <h3>АСТРА — аналитика микро- и малого бизнеса (DSS)</h3>
+                    <p>Сбор структурированных ответов, расчёт показателей по 5 блокам, интерактивные графики, выгрузки
+                        CSV/JSON.</p>
+                    <p class="stack">Python, pandas, Flask, MongoDB, Chart.js/Plotly, Docker, Yandex Cloud</p>
+                    <div class="card__actions">
+                        <a class="btn btn--sm" href="https://astra-systems.ru/" target="_blank" rel="noopener">Стенд
+                            ↗</a>
+                    </div>
+                </article>
+                <article class="card">
+                    <h3>Kaggle «House Prices»</h3>
+                    <p>EDA, препроцессинг, линейные и регуляризованные модели, кросс-валидация (RMSE).</p>
+                    <p class="stack">Python, pandas, scikit-learn</p>
+                    <div class="card__actions">
+                        <a class="btn btn--sm" href="https://github.com/potyomin" target="_blank" rel="noopener">Перейти
+                            на GitHub ↗</a>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- PUBLICATIONS -->
+        <section id="pubs" class="section container">
+            <h2>Публикации</h2>
+            <ul class="pubs">
+                <li>
+                    Potemin V.D., Gubkin D.A., Sluzova N.A. <em>Modeling the Structure of an Organization Using BPMN and
+                        LLM</em>.
+                    Lecture Notes in Networks and Systems, vol. 939, Springer, 2024.
+                    <a href="https://link.springer.com/chapter/10.1007/978-3-031-97992-7_60" target="_blank"
+                        rel="noopener">DOI ↗</a>
+                </li>
+                <li>
+                    МИКМО-2025: <em>Разработка прототипа экспертной системы...</em>
+                    <a href="https://micme.ru/files/theses/%D0%9C%D0%98%D0%9A%D0%9C%D0%9E-2025-00.pdf" target="_blank"
+                        rel="noopener">PDF ↗</a>
+                </li>
+                <li>
+                    Казанские научные чтения — 2024: <em>ИИ-автоматизация построения блок-схем...</em>
+                    <a href="https://ieml.ru/enlightenment/kazanskie-nauchnye-chteniya/2024/sbornik/tom-4.pdf"
+                        target="_blank" rel="noopener">PDF ↗</a>
+                </li>
+                <li>
+                    «Инновации в науке и практике» — XIX Всероссийский конкурс НИР, Уфа, 2024: <em>Сборник трудов</em>
+                    <a href="https://perviy-vestnik.ru/wp-content/uploads/2024/11/2024-%D0%95-312-11_24.pdf"
+                        target="_blank" rel="noopener">PDF ↗</a>
+                </li>
+            </ul>
+        </section>
+
+        <!-- EDUCATION -->
+        <section id="edu" class="section container">
+            <h2>Образование</h2>
+            <div class="timeline">
+                <div class="tl__item">
+                    <div class="tl__dot"></div>
+                    <div class="tl__content">
+                        <h3>Университет ИТМО — магистратура, 02.04.03 «Аналитика данных»</h3>
+                        <p class="muted">09.2025 — н.в., Санкт-Петербург</p>
+                    </div>
+                </div>
+                <div class="tl__item">
+                    <div class="tl__dot"></div>
+                    <div class="tl__content">
+                        <h3>САФУ — бакалавриат, 01.03.02 «ПМИ», профиль «Суперкомпьютерные технологии и ВВ»</h3>
+                        <p class="muted">09.2021 — 06.2025 · ВКР на «Отлично»</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTACT -->
+        <section id="contact" class="section container">
+            <h2>Контакты</h2>
+            <div class="contact-card">
+                <a class="contact-pill" href="mailto:potyominvladislav@gmail.com">✉️ potyominvladislav@gmail.com</a>
+                <a class="contact-pill" href="tel:+79115851390">📞 +7 911 585-13-90</a>
+                <a class="contact-pill" href="https://t.me/potyominv" target="_blank" rel="noopener">✈️ @potyominv</a>
+                <a class="contact-pill" href="https://github.com/potyomin" target="_blank" rel="noopener">💻
+                    github.com/potyomin</a>
+            </div>
+            <p class="muted small">Последнее обновление: <span id="lastUpdated"></span></p>
+        </section>
+    </main>
+
+    <button id="toTop" class="to-top" aria-label="Наверх">↑</button>
+
+    <footer class="site-footer">
+        © <span id="year"></span> Владислав Потёмин · Junior Data Analyst
+    </footer>
+</body>
+
+</html>
