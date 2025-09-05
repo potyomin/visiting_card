@@ -388,7 +388,11 @@ body {
     background: #10172d;
     color: #fff;
     cursor: pointer;
-    display: none
+    display: none;
+    align-items: center;
+    justify-content: center;
+    line-height: 1;
+    font-size: 18px;
 }
 
 /* Footer */
@@ -398,6 +402,40 @@ body {
     text-align: center;
     color: var(--muted);
     background: #0d1226
+}
+
+/* === LIGHT THEME OVERRIDES === */
+:root[data-theme="light"] .site-header {
+    background: rgba(255, 255, 255, .85);
+    border-bottom: 1px solid rgba(0, 0, 0, .06);
+}
+
+:root[data-theme="light"] .nav a {
+    color: var(--text);
+}
+
+:root[data-theme="light"] .nav a:hover {
+    background: rgba(0, 0, 0, .05);
+    color: #0c1430;
+}
+
+/* Кнопка "Портфолио" (btn--ghost) — делаем светлой и контрастной */
+:root[data-theme="light"] .btn--ghost {
+    background: #f1f4ff;
+    border-color: #d8e1ff;
+    color: #0c1430;
+}
+
+:root[data-theme="light"] .btn--ghost:hover {
+    background: #e7edff;
+}
+
+/* Чипсы навыков — тёмный текст на светлом фоне */
+:root[data-theme="light"] .chips span {
+    background: #ffffff;
+    border: 1px solid rgba(0, 0, 0, .08);
+    color: #0c1430;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, .05);
 }
 
 /* Responsive */
