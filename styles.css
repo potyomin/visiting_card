@@ -452,3 +452,26 @@ body {
         display: none
     }
 }
+
+/* Certificates grid */
+.grid--cards-3 {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+@media (max-width: 960px) {
+    .grid--cards-3 {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Outline-badge */
+.badge--outline {
+    background: transparent;
+    color: var(--text);
+    border: 1px solid rgba(255, 255, 255, .25);
+}
+
+:root[data-theme="light"] .badge--outline {
+    color: #0c1430;
+    border-color: rgba(0, 0, 0, .2);
+}
